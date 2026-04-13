@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'basic_widgets/loading_cupertino.dart';
+import 'basic_widgets/fab_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: .center,
           children: [
-            const LoadingCupertino(),
+            
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
@@ -113,11 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+      floatingActionButton: const FabWidget(),
     );
   }
 }
